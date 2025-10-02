@@ -1,89 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Interests — My Passions Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="home.html">Home</a> |
-        <a href="about.html">My Tech Journey</a> |
-        <a href="interests.html">Interests</a> |
-        <a href="contact.html">Contact</a>
+
+  <body class="interests-page">
+    <header class="site-header">
+      <nav class="nav">
+        <ul class="nav-pill">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">My Tech Journey</a></li>
+          <li><a href="interests.html" class="active">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <hr />
     </header>
 
-    <main>
-      <h1>My Interests</h1>
-      <p>
-        Here are the passions I enjoy the most, along with some of my favorites
-        in each category.
-      </p>
+    <main class="wrap">
+      <section class="cards" aria-label="Interest cards">
+        <!-- F1 -->
+        <div class="card">
+          <input id="flip-f1" class="flip" type="checkbox" aria-hidden="true" />
+          <label
+            class="card-inner"
+            for="flip-f1"
+            tabindex="0"
+            aria-label="Flip Formula 1 card"
+          >
+            <div class="card-face card-front theme-f1">
+              <button
+                class="badge-heart"
+                type="button"
+                aria-label="Like"
+              ></button>
+              <div class="icon" aria-hidden="true">🏎️</div>
+              <h3>Formula 1</h3>
+            </div>
+            <div class="card-face card-back">
+              <h4>Why I love it</h4>
+              <p>
+                <strong>Favorite driver:</strong> Charles Leclerc<br />
+                <strong>Top race:</strong> Italian GP 2024<br />
+                Strategy, tire calls, and lights-out adrenaline!
+              </p>
+              <p class="hint">Click again to flip back</p>
+            </div>
+          </label>
+        </div>
 
-      <h2>Sports 🏎️</h2>
+        <!-- Soccer -->
+        <div class="card">
+          <input
+            id="flip-soccer"
+            class="flip"
+            type="checkbox"
+            aria-hidden="true"
+          />
+          <label
+            class="card-inner"
+            for="flip-soccer"
+            tabindex="0"
+            aria-label="Flip Soccer card"
+          >
+            <div class="card-face card-front theme-soccer">
+              <button
+                class="badge-heart"
+                type="button"
+                aria-label="Like"
+              ></button>
+              <div class="icon" aria-hidden="true">⚽</div>
+              <h3>Soccer</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>
+                <strong>Team:</strong> Bayern Munich<br />
+                <strong>Player:</strong> Joshua Kimmich<br />
+                <strong>Match:</strong> 2020 UCL Final — perfection.
+              </p>
+              <p class="hint">Click again to flip back</p>
+            </div>
+          </label>
+        </div>
 
-      <h3>Formula 1</h3>
-      <p><strong>Favorite Driver:</strong> Charles Leclerc</p>
-      <p><strong>Top Race I Loved:</strong>Italian Grand Prix 2024</p>
+        <!-- Tennis -->
+        <div class="card">
+          <input
+            id="flip-tennis"
+            class="flip"
+            type="checkbox"
+            aria-hidden="true"
+          />
+          <label
+            class="card-inner"
+            for="flip-tennis"
+            tabindex="0"
+            aria-label="Flip Tennis card"
+          >
+            <div class="card-face card-front theme-tennis">
+              <button
+                class="badge-heart"
+                type="button"
+                aria-label="Like"
+              ></button>
+              <div class="icon" aria-hidden="true">🎾</div>
+              <h3>Tennis</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>
+                <strong>Player:</strong> Alexander Zverev<br />
+                <strong>Slam:</strong> Wimbledon<br />
+                Long rallies and grass-court drama!
+              </p>
+              <p class="hint">Click again to flip back</p>
+            </div>
+          </label>
+        </div>
 
-      <img
-        src="C:\Users\Saathvika\OneDrive\Desktop\UML\IWS\PersonalWebsite\F1.jpeg"
-        alt="Formula 1 placeholder image"
-        width="250px"
-        height="300px"
-      />
+        <!-- Food -->
+        <div class="card">
+          <input
+            id="flip-food"
+            class="flip"
+            type="checkbox"
+            aria-hidden="true"
+          />
+          <label
+            class="card-inner"
+            for="flip-food"
+            tabindex="0"
+            aria-label="Flip Food card"
+          >
+            <div class="card-face card-front theme-food">
+              <button
+                class="badge-heart"
+                type="button"
+                aria-label="Like"
+              ></button>
+              <div class="icon" aria-hidden="true">🍜</div>
+              <h3>Food</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>
+                <strong>Cuisines:</strong> Indian, Mexican, Japanese<br />
+                <strong>Comfort:</strong> Biryani<br />
+                <strong>Bucket list:</strong> Sushi in Tokyo 🍣
+              </p>
+              <p class="hint">Click again to flip back</p>
+            </div>
+          </label>
+        </div>
 
-      <h3>Soccer ⚽</h3>
-      <p><strong>Favorite Team:</strong> FC Bayern Munich</p>
-      <p><strong>Favorite Player:</strong> Joshua Kimmich</p>
-      <p><strong>Memorable Match:</strong> 2020 Champions League Final</p>
-      <img
-        src="C:\Users\Saathvika\OneDrive\Desktop\UML\IWS\PersonalWebsite\Football.jpeg"
-        alt="Soccer placeholder image"
-        width="250px"
-        height="300px"
-      />
-
-      <h3>Tennis 🎾</h3>
-      <p><strong>Favorite Player:</strong> Alexander Zverev</p>
-      <p><strong>Favorite Grand Slam:</strong>Wimbeldon</p>
-
-      <img
-        src="C:\Users\Saathvika\OneDrive\Desktop\UML\IWS\PersonalWebsite\tennis.jpeg"
-        alt="Tennis placeholder image"
-        width="250px"
-        height="300px"
-      />
-
-      <h2>Food 🍲</h2>
-      <p><strong>Favorite Cuisines:</strong> Indian, Mexican, Japanese</p>
-      <p><strong>Top Comfort Foods:</strong></p>
-      <ul>
-        <li>Biryani</li>
-      </ul>
-      <p><strong>Bucket List Dish:</strong> Authentic sushi in Tokyo</p>
-      <img
-        src="Food.jpeg"
-        alt="Food placeholder image"
-        width="250px"
-        height="300px"
-      />
-
-      <h2>Travel ✈️</h2>
-      <p><strong>Favorite City I’ve Visited:</strong> Miami</p>
-      <p><strong>Dream Destination:</strong> Japan</p>
-
-      <img
-        src="C:\Users\Saathvika\OneDrive\Desktop\UML\IWS\PersonalWebsite\Travel.jpeg"
-        alt="Travel placeholder image"
-        width="250px"
-        height="300px"
-      />
+        <!-- Travel -->
+        <div class="card">
+          <input
+            id="flip-travel"
+            class="flip"
+            type="checkbox"
+            aria-hidden="true"
+          />
+          <label
+            class="card-inner"
+            for="flip-travel"
+            tabindex="0"
+            aria-label="Flip Travel card"
+          >
+            <div class="card-face card-front theme-travel">
+              <button
+                class="badge-heart"
+                type="button"
+                aria-label="Like"
+              ></button>
+              <div class="icon" aria-hidden="true">✈️</div>
+              <h3>Travel</h3>
+            </div>
+            <div class="card-face card-back">
+              <p>
+                <strong>Favorite city:</strong> Miami<br />
+                <strong>Dream:</strong> Japan — temples, trains, & treats.
+              </p>
+              <p class="hint">Click again to flip back</p>
+            </div>
+          </label>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <hr />
+    <footer class="site-footer">
       <p>© 2025 Saathvika</p>
     </footer>
   </body>

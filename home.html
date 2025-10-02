@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Home - Saathvika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="home.html">Home</a> |
-        <a href="about.html">My Tech Journey</a> |
-        <a href="interests.html">Interests</a> |
-        <a href="contact.html">Contact</a>
+    <header class="site-header">
+      <nav class="nav">
+        <ul class="nav-pill">
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">My Tech Journey</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <hr />
     </header>
 
-    <main>
-      <h1>Welcome!</h1>
-      <p>
-        Hi, I’m Saathvika! I enjoy building things with Java, Python, and web
-        technologies, and I’ve had the chance to work on cool projects like a
-        blockchain-based real estate app and sentiment analysis with machine
-        learning. I’ve also gained experience at Cognizant and Zemoso, where I
-        worked on software development and security solutions. Outside of tech,
-        I’m a big fan of Formula 1, soccer, tennis, traveling, and street food —
-        always up for new experiences on and off the screen.
-      </p>
+    <!-- Single section: background image + two-column content -->
+    <main class="hero-one">
+      <div class="hero-inner">
+        <!-- Left: polaroid -->
+        <figure class="polaroid">
+          <img src="" alt="Saathvika snapshot" />
+        </figure>
+
+        <section class="intro">
+          <h1>Hi, I’m Saathvika.</h1>
+          <p>
+            I build with Java, Python, and the web—fueled by F1 weekends,
+            street-food hunts, and new places to explore.
+          </p>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <hr />
+    <footer class="site-footer">
       <p>© 2025 Saathvika</p>
     </footer>
   </body>

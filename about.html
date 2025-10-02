@@ -1,62 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My Tech Jouyney — Saathvika</title>
+    <meta charset="utf-8" />
+    <title>My Tech Journey - Saathvika</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="home.html">Home</a> |
-        <a href="about.html">My Tech Journey</a> |
-        <a href="interests.html">Interests</a> |
-        <a href="contact.html">Contact</a>
+    <header class="site-header">
+      <nav class="nav">
+        <ul class="nav-pill">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html" class="active">My Tech Journey</a></li>
+          <li><a href="interests.html">Interests</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
-      <hr />
     </header>
 
-    <main>
-      <h1>My Tech Journey</h1>
-      <p>
-        Here’s a quick look at what I’ve been learning, building, and exploring
-        along the way.
-      </p>
+    <main class="about-wrap">
+      <div class="about-doodles" aria-hidden="true"></div>
 
-      <h2>Skills</h2>
-      <p>
-        I work with <strong>Java & Python</strong>, love tinkering with the web
-        using <strong>HTML, CSS, and JavaScript</strong>, and manage data with
-        <strong>MySQL</strong>. I also use tools like <strong>Git</strong> and
-        <strong>CyberArk</strong> to keep projects on track and secure.
-      </p>
+      <section class="about-hero">
+        <h1 class="spark">My Tech Journey</h1>
+        <p class="intro">
+          Here’s a quick look at what I’ve been learning, building, and
+          exploring along the way.
+        </p>
+      </section>
 
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>Cognizant (2023–2024):</strong> Strengthened security with
-          <em>Privileged Access Management</em> and worked with teams to build
-          scalable software.
-        </li>
-        <li>
-          <strong>Zemoso (2022):</strong> Built responsive web apps, used Git
-          for collaboration, and got hands-on with APIs.
-        </li>
-      </ul>
+      <section class="about-skills">
+        <h2>Skills</h2>
+        <ul class="chip-list">
+          <li class="chip">Java</li>
+          <li class="chip">Python</li>
+          <li class="chip">HTML</li>
+          <li class="chip">CSS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">MySQL</li>
+          <li class="chip">Git</li>
+          <li class="chip">CyberArk / PAM</li>
+        </ul>
+      </section>
 
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Blockchain Real Estate:</strong> A decentralized app with
-          smart contracts to make property deals faster and safer.
-        </li>
-        <li>
-          <strong>Sentiment Analysis:</strong> A machine learning model that
-          predicts movie review moods with 85% accuracy.
-        </li>
-      </ul>
+      <section class="about-exp">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li class="tl-item">
+            <div class="tl-card">
+              <h3>Cognizant — Programmer Analyst Trainee</h3>
+              <p class="tl-dates">Feb 2023 – Jun 2024</p>
+              <p>
+                Strengthened security with Privileged Access Management using
+                CyberArk and collaborated on scalable software solutions.
+              </p>
+            </div>
+          </li>
+          <li class="tl-item">
+            <div class="tl-card">
+              <h3>Zemoso Technologies — Full Stack Intern</h3>
+              <p class="tl-dates">Jan 2022 – Jun 2022</p>
+              <p>
+                Built responsive web apps (Java, JS, React), used Git for team
+                workflows, and worked with RESTful APIs.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="about-projects">
+        <h2>Projects</h2>
+        <div class="proj-grid">
+          <article class="proj-card tilt">
+            <h3>Blockchain Real Estate</h3>
+            <p>
+              A decentralized platform with smart contracts to speed up and
+              secure property deals.
+            </p>
+          </article>
+          <article class="proj-card tilt">
+            <h3>Sentiment Analysis</h3>
+            <p>
+              ML model (scikit-learn) classifying IMDb reviews with ~85%
+              accuracy using NLP features.
+            </p>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <hr />
+    <footer class="site-footer">
       <p>© 2025 Saathvika</p>
     </footer>
   </body>
